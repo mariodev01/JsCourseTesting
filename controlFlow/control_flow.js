@@ -85,3 +85,7 @@ switch(personRole){
 
 console.log("Person Role", personRole);
 console.log("Access to:", accessTo);
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
