@@ -58,3 +58,30 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticate
 
 
 console.log("Authentication Status:", authenticationStatus);
+
+
+
+//Practice Task
+
+let personRole = "Employee";
+let accessTo;
+
+
+switch(personRole){
+    case "Employee":
+        accessTo = "Dietary Services";
+        break;
+    case "Enrolled Member":
+        accessTo = "Dietary Services and one-on-one interaction with a dietician";
+        break;
+    case "Subscriber":
+        accessTo = "Partial Dietary Services";
+        break;
+    case "Non-Subscriber":
+        accessTo = "You need to enroll or at least subscribe first to avail this facility";
+        break;
+}
+
+
+console.log("Person Role", personRole);
+console.log("Access to:", accessTo);
