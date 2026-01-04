@@ -41,7 +41,14 @@ function endTest() {
     // Mostrar los resultados
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Resultados de la Prueba de Escritura:</h2>" +
-        "<p>Palabras Escribidas: " + typedWords + "</p>" +
+        "<p>Palabras Escritas: " + typedWords + "</p>" +
+        "<p>Total Length: " + userTypedText.length + "</p>" +
         "<p>Tiempo Transcurrido: " + timeElapsed.toFixed(2) + " segundos</p>" +
         "<p>Palabras Por Minuto (WPM): " + wpm + "</p>";
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        endTest();
+    }
+});
