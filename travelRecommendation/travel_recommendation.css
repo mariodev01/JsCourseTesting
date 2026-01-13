@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('images/newyork.jpg');
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    /* Container needs relative positioning */
+    display: inline-block;
+    /* Helps wrap the container around the image */
+}
+
+.background-image {
+    display: block;
+    width: 100%;
+    /* Makes image responsive */
+    height: auto;
+}
