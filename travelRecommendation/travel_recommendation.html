@@ -1,114 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>TravelerHumans</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="travel_recommendation.css" />
-</head>
-
-<body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Travelers Humans</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Enter a destination or keyword"
-                            aria-label="Search" />
-                        <button class="btn btn-outline-success" type="button">
-                            Search
-                        </button>
-                        <button class="btn btn-outline-info" type="button">Clear</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-
-        <div></div>
-        <p class="text-uppercase fs-1 text-wrap" style="width: 25rem; color: white">
-            FOLLOW YOUR DREAMS.
-        </p>
-
-        <p class="fs-4" style="width: 15rem; color: white">
-            Step outside your comfort zone, face new challenges, and build the life
-            you imagine. Every journey begins with a single step.
-        </p>
-    </div>
-
-    <main class="d-flex flex-nowrap">
-        <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.0rem;"> <a href="/"
-                class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip"
-                data-bs-placement="right" data-bs-original-title="Icon-only"> <svg class="bi pe-none" width="40"
-                    height="32" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> <span class="visually-hidden">Icon-only</span> </a>
-            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                <li class="nav-item"> <a href="#" class="nav-link active py-3 border-bottom rounded-0"
-                        aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
-                        data-bs-original-title="Home"> <svg class="bi pe-none" width="24" height="24" role="img"
-                            aria-label="Home">
-                            <use xlink:href="#home"></use>
-                        </svg> </a> </li>
-                <li> <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard"> <svg
-                            class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg> </a> </li>
-                <li> <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders"> <svg
-                            class="bi pe-none" width="24" height="24" role="img" aria-label="Orders">
-                            <use xlink:href="#table"></use>
-                        </svg> </a> </li>
-                <li> <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Products" data-bs-original-title="Products"> <svg
-                            class="bi pe-none" width="24" height="24" role="img" aria-label="Products">
-                            <use xlink:href="#grid"></use>
-                        </svg> </a> </li>
-                <li> <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers"> <svg
-                            class="bi pe-none" width="24" height="24" role="img" aria-label="Customers">
-                            <use xlink:href="#people-circle"></use>
-                        </svg> </a> </li>
-            </ul>
-            <div class="dropdown border-top"> <a href="#"
-                    class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle"
-                    data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="mdo"
-                        width="24" height="24" class="rounded-circle"> </a>
-                <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </div>
-        </div>
-    </main>
-</body>
-
-</html> -->
-
 <!doctype html>
 <html lang="en">
 
@@ -139,60 +28,73 @@
                     <li><a href="contact.html" class="nav-link px-2">Contact Us</a></li>
                 </ul>
                 <div class="col-md-3">
-                    <input class="form-control me-1" type="search" placeholder="Enter a destination or keyword"
+                    <input class="form-control me-1" id="txtValue" type="search" placeholder="Enter a destination or keyword"
                         aria-label="Search" />
-                    <button type="button" class="btn btn-outline-primary me-2">Search
+                    <button type="button" id="searchButton" class="btn btn-outline-primary me-2">Search
                     </button>
-                    <button type="button" class="btn btn-secondary">Clear
+                    <button type="button" id="clearButton" class="btn btn-secondary">Clear
                     </button>
                 </div>
             </header>
         </div>
 
-
-
-        
-        <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
-            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                <li class="nav-item">
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" aria-current="page"
-                        data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
-                        data-bs-original-title="Home">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
         <div class="container">
-            <p class="text-uppercase fs-1 text-wrap" style="width: 25rem; color: white">
-            FOLLOW YOUR DREAMS.
-        </p>
+            <div class="row">
+                <div class="col-3">
+                    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
+                        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link py-3 border-bottom rounded-0" aria-current="page"
+                                    data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
+                                    data-bs-original-title="Home">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <p class="fs-4" style="width: 15rem; color: white">
-            Step outside your comfort zone, face new challenges, and build the life
-            you imagine. Every journey begins with a single step.
-        </p>
+                <div class="col-3">
+                    <p class="text-uppercase fs-1 text-wrap" style="width: 25rem; color: white">
+                        FOLLOW YOUR DREAMS.
+                    </p>
+
+                    <p class="fs-4" style="width: 15rem; color: white">
+                        Step outside your comfort zone, face new challenges, and build the life
+                        you imagine. Every journey begins with a single step.
+                    </p>
+                </div>
+
+
+                <div class="col-6">
+                    <div id="cardContainer">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <script src="travel_recommendation.js">
+    </script>
 </body>
 
 </html>
