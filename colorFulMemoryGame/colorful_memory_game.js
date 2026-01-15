@@ -6,7 +6,6 @@ let timeLeft = 30;
 let gameInterval;
 
 
-
 const startbtn = document.getElementById('startbtn');
 const gameContainer = document.getElementById('game-container');
 const scoreElement = document.getElementById('score');
